@@ -2,11 +2,17 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.nav`
-  widh: 100%;
+  width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
 `;
 
 export const Left = styled.div`
@@ -33,6 +39,11 @@ export const Right = styled.div`
   @media (max-width: 1000px) {
     width: 80%;
   }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    border-radius: 40px 40px 0px 0px;
+  }
 `;
 
 export const Image = styled.img`
@@ -40,18 +51,16 @@ export const Image = styled.img`
   margin: 1rem;
 `;
 export const Item = styled(Link)`
-  height: 100%;
-  width: 25%;
   text-decoration: none;
   color: ${({ active }) => (active ? "var(--purple-100)" : "var(--white)")};
-  font-size: 20px;
-
+  font-size: 1rem;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: ${({ active }) => (active ? "bold" : "regular")};
+  font-weight: ${({ active }) => (active ? -"bold" : "regular")};
 
-   @media (max-width: 700px) {
-    font-size: 15px;
+  @media (max-width: 600px) {
+    font-size: 0.8rem;
   }
 `;
