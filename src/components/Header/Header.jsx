@@ -22,19 +22,11 @@ const Header = () => {
     { id: 4, title: "Contato", path: "/contato" },
   ];
 
-  const itemsMenuSmall = [
-    { id: 1, title: "Home", path: "/" },
-    { id: 2, title: "Sobre", path: "/sobre" },
-    { id: 3, title: "Currículo", path: "/curriculo" },
-    { id: 4, title: "Projetos", path: "/projetos" },
-    { id: 5, title: "Contato", path: "/contato" },
-  ];
-
   return (
     <HeaderContainer>
       {isMobile ? (
         <Right>
-          {itemsMenuSmall.map((item) => (
+          {itemsMenu.map((item) => (
             <Item
               key={item.id}
               onClick={() => setActive(item.title)}
