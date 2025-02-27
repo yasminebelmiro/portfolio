@@ -1,65 +1,50 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HomeContainer = styled.section`
-  width: 100wv;
-  max-height: 100hv;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--white);
-`;
-
-export const ImageContainer = styled.div`
-  padding: 5% 41% 1%;
-
-  @media (max-width: 600px) {
-    padding: 20% 20% 10%;
-  }
+width: 30%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+padding: 10% 2%;
 `;
 
 export const Image = styled.img`
-  width: 100%;
-  border-radius: 100%;
-  border: 6px solid var(--white);
-`;
+max-width: 100%;
+width: 200px;
+border-radius: 100%;
+border: 8px solid white;
+margin-bottom: 1.5rem;
+`
 
-export const Title = styled.h1`
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  margin: 0 10%;
+export const Name = styled.h1`
+font-size: 25px;
+margin-bottom: .5rem;
+`
 
-  @media (max-width: 900px) {
-    font-size: 2rem;
-  }
-  @media (max-width: 600px) {
-    font-size: 1.5rem;
-  }
-`;
+export const Hole = styled.h2`
+font-size: 18px;
+background-color: var(--purple);
+padding: .5rem;
+margin-bottom: 2rem;
+border-radius: 10px;
+`
 
 export const Text = styled.p`
-  font-size: 1.5rem;
-  margin: 0 10%;
-  text-align: center;
-  margin-bottom: 2rem;
+font-size: 18px;
+display: flex;
+align-items: center;
+margin-bottom: .3rem;`
 
-  @media (max-width: 900px) {
-    font-size: 1rem;
-  }
+export const TextIcons = styled.div`
+font-size: 24px;
+margin-right: 5px;`
 
-    @media (max-width: 600px) {
-    text-align: end;
-  }
-`;
+export const SocialContainer = styled.div`
+display: flex;
+margin-top: 1rem;
+`
 
-export const SocialContent = styled.div`
-  display: flex;
-  gap: 1rem;
-  text-decoration: none;
-`;
-
-export const LinkItem = styled(Link)`
-  color: var(--white);
-`;
+export const SocialIcons = styled.div`
+font-size: 35px;`

@@ -1,42 +1,39 @@
 import React from "react";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { FaSquareInstagram, FaSquareXTwitter } from "react-icons/fa6";
-import MePhoto from "../../assets/me.jpg";
 import {
   HomeContainer,
+  Hole,
   Image,
-  SocialContent,
+  Name,
+  SocialContainer,
+  SocialIcons,
   Text,
-  Title,
-  ImageContainer,
-  LinkItem,
+  TextIcons,
 } from "./style";
+import Me from "../../assets/me.jpg";
+import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
+import { MdOutlineLocationOn, MdOutlineMailOutline } from "react-icons/md";
+import { FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
 
 const Home = () => {
   return (
     <HomeContainer>
-      <ImageContainer>
-        <Image src={MePhoto} alt="Foto Yasmine" />
-      </ImageContainer>
-      <Title>Olá, meu nome é Yasmine...</Title>
+      <Image src={Me} alt="" />
+      <Name>Yasmine Belmiro</Name>
+      <Hole>Desenvolvedora Front-end</Hole>
       <Text>
-        ...apaixonada por desenvolvimento front-end. Transformo ideias em
-        interfaces interativas e acessíveis."
+        <TextIcons as={MdOutlineLocationOn} />
+        Pires do Rio - GO
       </Text>
-      <SocialContent>
-        <LinkItem to="https://www.linkedin.com/in/yasmine-oliveira-belmiro-471612282/">
-          <FaLinkedin size={50} />
-        </LinkItem>
-        <LinkItem to="https://www.instagram.com/thatskymine/">
-          <FaSquareInstagram size={50} />
-        </LinkItem>
-        <LinkItem to="https://x.com/thatsky_mine">
-          <FaSquareXTwitter size={50} />
-        </LinkItem>
-        <LinkItem to="https://github.com/yasminebelmiro">
-          <FaGithubSquare size={50} />
-        </LinkItem>
-      </SocialContent>
+      <Text>
+        <TextIcons as={MdOutlineMailOutline} />
+        devyasminebelmiro@gmail.com
+      </Text>
+      <SocialContainer>
+        <SocialIcons as={FaLinkedin} />
+        <SocialIcons as={FaGithubSquare} />
+        <SocialIcons as={FaInstagramSquare} />
+        <SocialIcons as={FaSquareXTwitter} />
+      </SocialContainer>
     </HomeContainer>
   );
 };
