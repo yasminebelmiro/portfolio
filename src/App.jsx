@@ -7,21 +7,24 @@ import Projects from "./pages/Projects/projects";
 import Contacts from "./pages/Contacts/contacts";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
+import { GlobalContainer } from "./global";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
       <Outlet />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<About />} />
-        <Route path="/curriculo" element={<Cv />} />
-        <Route path="/projetos" element={<Projects />} />
-        <Route path="/projetos/aplicacoes/" element={<Projects />} />
-        <Route path="/projetos/protitipagem/" element={<Projects />} />
-        <Route path="/contatos" element={<Contacts />} />
-      </Routes>
+      <GlobalContainer>
+        <Home />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/curriculo" element={<Cv />} />
+          <Route path="/projetos" element={<Projects />} />
+          <Route path="/projetos/aplicacoes/" element={<Projects />} />
+          <Route path="/projetos/protitipagem/" element={<Projects />} />
+          <Route path="/contatos" element={<Contacts />} />
+        </Routes>
+      </GlobalContainer>
     </BrowserRouter>
   );
 };

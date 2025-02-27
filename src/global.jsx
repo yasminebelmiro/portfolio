@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -19,5 +19,14 @@ export const GlobalStyle = createGlobalStyle`
 body{
 background-color:black;
 font-family: "Courier Prime", serif;
+
 }
 `;
+
+export const GlobalContainer = styled.div`
+ display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 30px;
+`

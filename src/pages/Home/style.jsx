@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.section`
 width: 30%;
+height: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 color: white;
-padding: 10% 2%;
+
 `;
 
 export const Image = styled.img`
