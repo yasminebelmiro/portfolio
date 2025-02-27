@@ -17,16 +17,21 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body{
-background-color:black;
-font-family: "Courier Prime", serif;
-
+    background-color:black;
+    font-family: "Courier Prime", serif;
 }
 `;
 
 export const GlobalContainer = styled.div`
- display: flex;
+  display: flex;
   flex-direction: row;
   width: 100vw;
   height: 100vh;
   padding-top: 30px;
-`
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    width: auto;
+    height: auto;
+  }
+`;

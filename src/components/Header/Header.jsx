@@ -3,7 +3,7 @@ import Logo from "../../assets/bunny-solid.svg";
 import { HeaderContainer, Image, Item, Left, Right } from "./style";
 
 const Header = () => {
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("Sobre");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
 
   useEffect(() => {
