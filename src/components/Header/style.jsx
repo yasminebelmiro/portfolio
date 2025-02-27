@@ -16,7 +16,7 @@ export const HeaderContainer = styled.nav`
 `;
 
 export const Left = styled.div`
-  width: 50%;
+  width: 30%;
 
   display: flex;
   align-items: center;
@@ -28,13 +28,13 @@ export const Left = styled.div`
 `;
 
 export const Right = styled.div`
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   border-radius: 0px 0px 0px 45px;
-  background-color: var(--purple-300);
+  background-color: var(--purple);
 
   @media (max-width: 1000px) {
     width: 80%;
@@ -52,13 +52,13 @@ export const Image = styled.img`
 `;
 export const Item = styled(Link)`
   text-decoration: none;
-  color: ${({ active }) => (active ? "var(--purple-100)" : "var(--white)")};
-  font-size: 1rem;
+  color: ${({ active }) => (active ? "black" : "white")};
+  font-size: 1.3rem;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: ${({ active }) => (active ? -"bold" : "regular")};
+  font-weight: bold;
 
   @media (max-width: 600px) {
     font-size: 0.8rem;
