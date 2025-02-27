@@ -40,9 +40,7 @@ const Header = () => {
       ) : (
         <>
           <Left>
-            <Link to={"/"}>
-              <Image src={Logo} alt="Logo" />
-            </Link>
+            <Image src={Logo} alt="Logo" />
           </Left>
 
           <Right>
