@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.section`
   width: 70%;
-  height: 100%;
+height: 83vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

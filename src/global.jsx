@@ -26,7 +26,7 @@ export const GlobalContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100vw;
-  height: 100vh;
+  
   padding-top: 30px;
 
   @media (max-width: 600px) {
