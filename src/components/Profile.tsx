@@ -22,7 +22,7 @@ const Profile = ({
   githubURL,
 }: ProfileProps) => {
   return (
-    <section className="w-full lg:w-1/3 text-white p-5 pt-10">
+    <section className="w-full lg:w-1/3 text-white p-5 overflow-y-auto">
       <div className="flex lg:flex-col gap-5 text-center justify-start md:justify-center items-center">
         <img
           className="rounded-full w-30 h-30 md:w-50 md:h-50 border-4 border-white"
