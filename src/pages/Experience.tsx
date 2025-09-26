@@ -1,9 +1,10 @@
-import React from "react";
+import cv from "../assets/Currículo-YasmineBelmiro.pdf";
 import company1 from "../assets/company-images/compass_uol_logo.jpeg";
 import company2 from "../assets/company-images/dd-logo.png";
 import company3 from "../assets/company-images/if-goiano-logo.png";
 import company4 from "../assets/company-images/udemy_logo.jpeg";
 import company5 from "../assets/company-images/dio-logo.jpg";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   const experiences = [
@@ -70,6 +71,11 @@ const Experience = () => {
       <h1 className="text-2xl">
         Minhas <b>Experiências</b>
       </h1>
+      <a href={cv} download={"Curriculo-YasmineBelmiro"}>
+        <button className="bg-black hover:bg-gray-500 cursor-pointer text-white px-4 py-2 rounded">
+          Baixar CV
+        </button>
+      </a>
       {experiences.map((exp, index) => (
         <div
           className="w-full flex flex-col hover:bg-black hover:text-white p-5 gap-5 rounded"

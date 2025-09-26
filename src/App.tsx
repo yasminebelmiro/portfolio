@@ -4,7 +4,7 @@ import Menu from "./components/Menu";
 import { Outlet } from "react-router-dom";
 const App = () => {
   return (
-    <div className="w-full h-auto lg:h-screen ">
+    <div className="w-full h-auto lg:h-screen">
       <Menu />
       <div className=" flex flex-col lg:flex-row h-full justify-center items-start mb-16 lg:pt-16 md:mb-0 lg:overflow-hidden">
         <Profile
