@@ -52,7 +52,7 @@ export const skills = [
 
 const About = () => {
   return (
-    <div className="w-full bg-white flex flex-col gap-4 md:gap-10 justify-center items-center py-10 px-4 rounded-0 md:rounded-tr-3xl lg:rounded-tr-none lg:rounded-tl-3xl md:mt-16 md:px-10">
+    <div className="w-full h-full overflow-y-auto flex flex-col gap-5 justify-start items-center pt-10 pb-20 ">
       <h1 className="text-2xl">
         Sobre <b>Mim</b>
       </h1>
