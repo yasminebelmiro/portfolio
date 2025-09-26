@@ -72,7 +72,7 @@ const Experience = () => {
       </h1>
       {experiences.map((exp, index) => (
         <div
-          className="w-full flex flex-col hover:bg-black hover:text-white p-5 gap-5"
+          className="w-full flex flex-col hover:bg-black hover:text-white p-5 gap-5 rounded"
           key={index}
         >
           <div className="flex flex-col md:flex-row md:justify-between md:items-center ">
@@ -95,7 +95,7 @@ const Experience = () => {
       <h1 className="text-2xl">
         Minha <b>Educação</b>
       </h1>
-      <div className="w-full flex hover:bg-black hover:text-white p-5 ">
+      <div className="w-full flex hover:bg-black hover:text-white p-5 rounded">
         <div className="w-full flex items-center justify-between gap-5">
           <img
             className="w-20"
@@ -117,7 +117,7 @@ const Experience = () => {
       </h1>
       {course.map((c, index) => (
         <div
-          className="w-full flex hover:bg-black hover:text-white  p-5"
+          className="w-full flex hover:bg-black hover:text-white p-5 rounded"
           key={index}
         >
           <div className="w-full flex items-center justify-between gap-5">
